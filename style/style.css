@@ -30,11 +30,24 @@ a{
     font-size: 18px;
     line-height: 1.5;
     margin: 20px 20px;
+    color: black;
+}
+footer{
+    background-color: rgba(255,255,255, 0.7);
+    border-radius: 10px;
+    margin: 20px;
+}
+footer p{
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .photos-h1{
     font-family: monospace;
-    color: blueviolet;
+    color:white;
+    background: rgba( 0, 0, 0, 0.8 );
+    border-radius: 10px;
+    padding: 10px;
 }
 .container , .contact-container{
 background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
@@ -67,4 +80,60 @@ padding: 20px;
 
 .image-gallery img {
     width: 100%;
+}
+.links{
+    background: rgba( 0, 0,  0, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.links a{
+    color: white;
+}
+.email-link{
+    text-align: center;
+}
+
+@media (max-width:780px) {
+    body{
+        width: 90%;
+    }
+   h1{
+    font-size: 40px;
+   }
+   h2{
+    font-size: 20px;
+   }
+   li{
+    font-size: 16px;
+   }
+   p{
+font-size: 16px;    
+   }
+    .container , .contact-container{
+        max-width: 80%;
+        margin: 0 auto;
+        margin: 20px;
+    }
+    .main-pic-top{
+        display: block;
+        margin: 0 auto;
+    }
+        .picture-main-1,
+        .picture-main-2,
+        .picture-main-3,
+        .picture-main-4{
+            width: 90%;
+        }
+    .photos-h1{
+        text-align: center;
+        text-overflow: 1px solic white;
+        color: white;
+    }
+  .image-gallery{
+grid-template-columns: 1fr;
+  }
+.email-link{
+    font-size: 16px;
+}
 }
